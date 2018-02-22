@@ -1,0 +1,62 @@
+module.exports = {
+    extends: [
+        'eslint-config-airbnb-base'
+    ],
+    rules: {
+        "arrow-body-style": ["error", "as-needed"],
+        "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+        "class-methods-use-this": "off",
+        "comma-dangle": ["error", "never"],
+        "func-names": "off",
+        "import/no-unresolved": "off",
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        "linebreak-style": "off",
+        "max-len": ["error", 150],
+        "newline-before-return": "error",
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 1 }],
+        "no-confusing-arrow": "off",
+        "no-param-reassign": ["error", {"props": false}],
+        "no-restricted-properties":[
+            "error",{
+                "object":"arguments",
+                "property":"callee",
+                "message":"arguments.callee is deprecated"
+            },{
+                "object":"global",
+                "property":"isFinite",
+                "message":"Please use Number.isFinite instead"
+            },{
+                "object":"self",
+                "property":"isFinite",
+                "message":"Please use Number.isFinite instead"
+            },{
+                "object": "window",
+                "property":"isFinite",
+                "message":"Please use Number.isFinite instead"
+            },{
+                "object":"global",
+                "property":"isNaN",
+                "message":"Please use Number.isNaN instead"
+            },{
+                "object":"self",
+                "property":"isNaN",
+                "message":"Please use Number.isNaN instead"
+            },{
+                "object":"window",
+                "property":"isNaN",
+                "message":"Please use Number.isNaN instead"
+            },{
+                "property":"__defineGetter__",
+                "message":"Please use Object.defineProperty instead."
+            },{
+                "property":"__defineSetter__",
+                "message":"Please use Object.defineProperty instead."
+            }
+        ],
+        "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+        "no-unused-vars": ["error", {"vars": "all", "args": "none"}],
+        "object-shorthand": ["error", "properties"],
+        "quote-props": ["error", "consistent"],
+        "strict": "off"
+    }
+};

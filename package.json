@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-elevate-base",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Elevate's base JS ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
