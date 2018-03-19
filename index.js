@@ -8,7 +8,11 @@ module.exports = {
         "class-methods-use-this": "off",
         "comma-dangle": ["error", "never"],
         "func-names": "off",
-        "import/no-unresolved": "off",
+        "import/no-unresolved": ["error", {"commonjs": true, "amd": true}],
+        "import/named": "error",
+        "import/namespace": "error",
+        "import/default": "error",
+        "import/export": "error",
         "indent": ["error", 4, {"SwitchCase": 1}],
         "linebreak-style": "off",
         "max-len": ["error", 150],
@@ -58,5 +62,8 @@ module.exports = {
         "object-shorthand": ["error", "properties"],
         "quote-props": ["error", "consistent"],
         "strict": "off"
-    }
+    },
+    plugins: [
+        "import"
+    ]
 };
